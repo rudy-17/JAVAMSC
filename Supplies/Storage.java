@@ -6,7 +6,7 @@ public class Storage
 	interface Methods
 	{
 		public abstract void Welcome();
-		public static class Info();
+		public  class Info{};
 	}
 		
 	class MarketWatch
@@ -23,7 +23,8 @@ public class Storage
 	}
 class Trading extends MarketWatch
 {					
-     String name,market;
+    String name,market;
+    StringBuffer a= new StringBuffer("Welcome to The Trading Platform"); 
     int price;
    // static
     //{
@@ -41,14 +42,14 @@ class Trading extends MarketWatch
     this.market=markett;
     this.price=pricee;
     }
-    public static class Info
+    public  class Info
     {
     	public void print()
     	{
     	System.out.println("The name of the stock is" + name);
     	}
     }
-    public static void Welcome(String name)
+    public  void Welcome(String name)
     {
     	System.out.println("\n			Welcome to the Trading Platform "  + name+"\n");
     }
